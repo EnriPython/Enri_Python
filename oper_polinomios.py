@@ -16,7 +16,6 @@ sys.displayhook = pprint
 sympy.init_printing()
 x,y = sympy.symbols('x,y')
 
-# Obtenes los dos polinomios introducidos por el usuario
 
 print"     #######################################################################"
 print"     #                                                                     #"
