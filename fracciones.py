@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
      
 from fractions import gcd
- 
+
+print"#####    fracciones by Enri_Python    #####"
    
 print"#### OPERACIONES CON FRACCIONES ####\n"     
 class Fraccion(object):
@@ -164,7 +165,7 @@ class Fraccion(object):
             return('1')
         elif self.den == 1:
             return('{}'.format(self.num))
-########elif self.num &gt; 0 and self.den &lt; 0:
+
             return('{}/{}'.format(-self.num, -self.den))
         else:
             return('{}/{}'.format(self.num, self.den))
