@@ -209,7 +209,7 @@ def corona():
 	R=float(input("¿Cuanto mide el radio mayor?: "))
 	print""
 	r=float(input("¿Cuanto mide el radio menor?: "))
-	a=math.pi*((R**2)-(r++2))
+	a=math.pi*((R**2)-(r**2))
 	print""
 	print"El área de la corona es: ",a
 	print""
