@@ -551,7 +551,6 @@ def tronpi():
 	apM=L/2
 	apm=l/2
 	ap=apM-apm
-	AP=round((math.sqrt((ap**2)+(h**2))), 3)
 	aB=(L**2)
 	ab=(l**2)
 	a=(((L*4)+(l*4))/2)*AP+((aB)+(ab))
