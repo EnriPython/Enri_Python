@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-# Importamos las libreria SympY, sys y string
+# Importamos las libreria sympy, sys y string
 
 import sympy
 from sympy import *
@@ -44,7 +44,7 @@ print("\n")
 Poly1 = sympy.Poly(p1)
 Poly2 = sympy.Poly(p2)
 
-# Declaramos una funcion para cada operacion que querramos utilizar
+# Declaramos una funcion para cada operacion que queramos utilizar
 
 def mult(p1, p2):
 	return p1 * p2
@@ -60,7 +60,7 @@ def cociente(p1, p2):
 		C,R = div(p1, p2)
 		return [C, R]
 	except:
-		return "el segundo polinomio no puede ser nulo" 
+		return "      El segundo polinomio no puede ser nulo" 
 
 C,R = cociente(p1, p2)
 
@@ -74,7 +74,8 @@ resultDiv = C
 resultRest = R
 
 
-# Mostramos el valor que deseemos
+# Mostramos el valor que queremos
+
 print"     El resultado de la multiplicacion es: ", resultMult
 print""
 print"     El resultado de la suma es: ", resultSuma
