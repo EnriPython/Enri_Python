@@ -120,7 +120,7 @@ def triangulo():
 
 def romboide():
 	print"#######################################################"
-	print("#########    AREA DEL ROMBOIDE#########################")
+	print"#########    AREA DEL ROMBOIDE    #####################"
 	print"#######################################################"
 	print""
 	b=float(input("¿Cuanto mide la base?: "))
@@ -131,8 +131,11 @@ def romboide():
 	print"El área del romboide es: ",a
 	print""
 	tecla=raw_input("Presione una tecla para continuar con otra figura geométrica, [0]--> para salir ......")
+	if tecla=="0":
+		salir()
+	else:
 
-	main()
+		main()
 
 
 
