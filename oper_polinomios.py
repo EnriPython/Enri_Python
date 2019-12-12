@@ -25,7 +25,7 @@ print"     #      multiplicacion, suma, resta, division, factorial y raiz       
 print"     #                                                                     #"
 print"     #                        Enri_Python v1.0                             #"
 print"     #                                                                     #"
-print"     #        Exprese el polinomio de ejemplo: 7x³ + 2x² + x + 7           #"
+print"     #        Exprese el polinomio de ejemplo: 7x³ + 2x² + x - 7           #"
 print"     #                                                                     #"
 print"     #            bajo este formato: 7*x**3 + 2*x**2 + x - 7               #"
 print"     #                                                                     #"
