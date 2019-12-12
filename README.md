@@ -5,10 +5,10 @@
      #                                                                     #
      #      multiplicacion, suma, resta, division, factorial y raiz        #
      #                                                                     #
-     #                        Enri_Python v1.0                             #
+     #                         polinomios.py v1.0                          #
+     #                          by Enri_Python                             #
      #                                                                     #
-     #        Exprese el polinomio de ejemplo: 7x³ + 2x² + x + 7           #
-     #                                                                     #
+     #        Exprese el polinomio de ejemplo: 7x³ + 2x² + x - 7           #
      #            bajo este formato: 7*x**3 + 2*x**2 + x - 7               #
      #                                                                     #
      #######################################################################
@@ -17,17 +17,26 @@
      
      #########################################
      #                                       #
-     #          by Enri_python               #
-     #                                       #
-     #     FIGURAS GEOMETRICAS v1.0          #
+     #          Area_y_Volumen.py v1.0       #
+     #                   by                  #
+     #               Enri_Python             #
      #                                       #
      #########################################
      
      
      ##########################################
      ####                                  ####    
-     ####    Fracciones by Enri_Python     ####
+     ####       fracciones.py v 1.0        ####
+     ####               by                 ####
+     ####           Enri_Python            ####
      ####                                  ####
-     ####    OPERACIONES CON FRACCIONES    ####
+     ##########################################
+     
+     
+     ##########################################
+     ####                                  ####    
+     ####           mates.py v1.0          ####
+     ####                by                ####
+     ####            Enri_Python           ####
      ####                                  ####
      ##########################################
