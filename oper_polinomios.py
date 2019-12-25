@@ -180,7 +180,9 @@ if string.find(resultDiv, "x"):
 else:
 	print""
 	print""
-	print"     Fin del programa ..........."
+
+# previene el cierre de la consola en algunos equipos	
+	raw_input("     Fin del programa ........... Presione una tecla para salir")
 
 
 
