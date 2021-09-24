@@ -405,7 +405,7 @@ def tetraedro():
 	print"#######################################################"
 	print""
 	l=float(input("¿Cuanto mide el lado?: "))
-	a=(r**2)*math.sqrt(3)
+	a=(l**2)*math.sqrt(3)
 	v=((l**3)*math.sqrt(2))/3
 	print""
 	print"El área del tetraedro es: ",a
