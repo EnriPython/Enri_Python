@@ -18,8 +18,9 @@ import sys
 def limpiar():
     """Limpia la pantalla"""
 
-    os.system("clear")
-
+# Limpia pantalla en linux
+#    os.system("clear")
+# Limpia pantalla en windows
     os.system("cls")
 
 
@@ -39,7 +40,7 @@ def cuadrado():
     l = float(input("Cuanto mide el lado del cuadrado?: "))
     a = l * l
     print""
-    print("El area del cuadrado es: " + str(a) + "\n")
+    print"El area del cuadrado es: " + str(a) + "\n"
     print""
     tecla = raw_input("Presione <ENTER> para continuar con otra figura geometrica, [0]--> para salir ......")
     if tecla == "0":
@@ -51,13 +52,13 @@ def cuadrado():
 
 def rectangulo():
     print"#######################################################"
-    print("#########    AREA DEL RECTANGULO    ###################")
+    print"#########    AREA DEL RECTANGULO    ###################"
     print"#######################################################"
     print""
     l = float(input("Cuanto mide el largo del Rectangulo?: "))
     print""
-    A = float(input("Cuanto mide el ancho del rectangulo?: "))
-    a = A * l
+    ar = float(input("Cuanto mide el ancho del rectangulo?: "))
+    a = ar * l
     print""
     print"El area del Rectangulo es: ", a
     print""
@@ -71,13 +72,13 @@ def rectangulo():
 
 def rombo():
     print"#######################################################"
-    print("#########    AREA DEL ROMBO    ########################")
+    print"#########    AREA DEL ROMBO    ########################"
     print"#######################################################"
     print""
-    lM = float(input("Cuanto mide la diagonal mayor?: "))
+    lma = float(input("Cuanto mide la diagonal mayor?: "))
     print""
     lm = float(input("Cuanto mide la diagonal menor?: "))
-    a = (lM * lm) / 2
+    a = (lma * lm) / 2
     print""
     print"El area del rombo es:  ", a
     print""
@@ -91,7 +92,7 @@ def rombo():
 
 def triangulo():
     print"#######################################################"
-    print("#########    AREA DEL TRIANGULO    ####################")
+    print"#########    AREA DEL TRIANGULO    ####################"
     print"#######################################################"
     print""
     b = float(input("Cuanto mide la base?: "))
@@ -99,7 +100,7 @@ def triangulo():
     h = float(input("Cuanto mide la altura?: "))
     a = (b * h) / 2
     print""
-    print"El área del triangulo es: ", a
+    print"El area del triangulo es: ", a
     print""
     tecla = raw_input("Presione <ENTER> para continuar con otra figura geometrica, [0]--> para salir ......")
     if tecla == "0":
@@ -111,7 +112,7 @@ def triangulo():
 
 def romboide():
     print"#######################################################"
-    print("#########    AREA DEL ROMBOIDE#########################")
+    print"#########    AREA DEL ROMBOIDE#########################"
     print"#######################################################"
     print""
     b = float(input("Cuanto mide la base?: "))
@@ -129,17 +130,17 @@ def romboide():
         main()
 
 
-def trapecio():
+def trapecio(tecla=None):
     print"#######################################################"
-    print("#########    AREA DEL TRAPECIO    #####################")
+    print"#########    AREA DEL TRAPECIO    #####################"
     print"#######################################################"
     print""
-    B = float(input("Cuanto mide la base mayor?: "))
+    bma = float(input("Cuanto mide la base mayor?: "))
     print""
     b = float(input("Cuanto mide la base menor?: "))
     print""
     h = float(input("Cuanto mide la altura?: "))
-    a = h * (B + b) / 2
+    a = h * (bma + b) / 2
     print""
     print"El area del trapecio es: ", a
     print""
@@ -153,7 +154,7 @@ def trapecio():
 
 def poligono():
     print"#######################################################"
-    print("#########    AREA DEL POLIGONO REGULAR    #############")
+    print"#########    AREA DEL POLIGONO REGULAR    #############"
     print"#######################################################"
     print""
     n = int(input("Cuantos lados tiene el polígono?: "))
@@ -175,7 +176,7 @@ def poligono():
 
 def circulo():
     print"#######################################################"
-    print("#########    AREA DEL CIRCULO    ######################")
+    print"#########    AREA DEL CIRCULO    ######################"
     print"#######################################################"
     print""
     r = float(input("Cuanto mide el Radio?: "))
@@ -193,13 +194,13 @@ def circulo():
 
 def corona():
     print"#######################################################"
-    print("#########    AREA DE LA CORONA CIRCULAR    ############")
+    print"#########    AREA DE LA CORONA CIRCULAR    ############"
     print"#######################################################"
     print""
-    R = float(input("Cuanto mide el radio mayor?: "))
+    rma = float(input("Cuanto mide el radio mayor?: "))
     print""
     r = float(input("Cuanto mide el radio menor?: "))
-    a = math.pi * ((R ** 2) - (r + +2))
+    a = math.pi * ((rma ** 2) - (r + +2))
     print""
     print"El area de la corona es: ", a
     print""
@@ -213,10 +214,10 @@ def corona():
 
 def sector():
     print"#######################################################"
-    print("#########    AREA DEL SECTOR CIRCULAR    ##############")
+    print"#########    AREA DEL SECTOR CIRCULAR    ##############"
     print"#######################################################"
     print""
-    n = float(input("Cuantos grados tiene el ángulo formado entre los dos radios?: "))
+    n = float(input("Cuantos grados tiene el angulo formado entre los dos radios?: "))
     print""
     r = float(input("Cuanto mide el radio?: "))
     a = (math.pi * (r ** 2) * n) / 360
@@ -233,7 +234,7 @@ def sector():
 
 def cubo():
     print"#######################################################"
-    print("#########    AREA Y VOLUMEN DEL CUBO    ###############")
+    print"#########    AREA Y VOLUMEN DEL CUBO    ###############"
     print"#######################################################"
     print""
     l = float(input("Cuanto mide el lado?: "))
@@ -254,20 +255,20 @@ def cubo():
 
 def cilindro():
     print"#######################################################"
-    print("#########    AREA Y VOLUMEN DEL CILINDRO    ###########")
+    print"#########    AREA Y VOLUMEN DEL CILINDRO    ###########"
     print"#######################################################"
     print""
     r = float(input("Cuanto mide el radio del cilindro?: "))
     print""
     h = float(input("Cuanto mide la altura del cilindro?: "))
-    a = (2 * (math.pi) * r * (h + r))
+    a = (2 * math.pi * r * (h + r))
     v = (math.pi * (r ** 2) * h)
     print""
     print"El area del  cilindro es: ", a
     print""
     print"El volumen del cilindro es: ", v
     print""
-    tecla = raw_input("Presione <ENTER> para continuar con otra figura geomtrica, [0]--> para salir ......")
+    tecla = raw_input("Presione <ENTER> para continuar con otra figura geometrica, [0]--> para salir ......")
     if tecla == "0":
         salir()
     else:
@@ -277,16 +278,16 @@ def cilindro():
 
 def ortoedro():
     print"#######################################################"
-    print("#########    AREA Y VOLUMEN DEL ORTOEDRO    ###########")
+    print"#########    AREA Y VOLUMEN DEL ORTOEDRO    ###########"
     print"#######################################################"
     print""
-    A = float(input("Cuanto mide el ancho?: "))
+    an = float(input("Cuanto mide el ancho?: "))
     print""
     l = float(input("Cuanto mide el largo?: "))
     print""
     h = float(input("¿Cuanto mide de altura?: "))
-    a = 2 * ((A * l) + (A * h) + (h * l))
-    v = A * l * h
+    a = 2 * ((an * l) + (an * h) + (h * l))
+    v = an * l * h
     print""
     print"El area del ortoedro es: ", a
     print""
@@ -302,7 +303,7 @@ def ortoedro():
 
 def cono():
     print"#######################################################"
-    print("#########    AREA Y VOLUMEN DEL CONO    ###############")
+    print"#########    AREA Y VOLUMEN DEL CONO    ###############"
     print"#######################################################"
     print""
     h = float(input("Cuanto mide la altura del cono?: "))
@@ -326,7 +327,7 @@ def cono():
 
 def prisma():
     print"#######################################################"
-    print("#######    AREA Y VOLUMEN DEL PRISMA REGULAR    #######")
+    print"#######    AREA Y VOLUMEN DEL PRISMA REGULAR    #######"
     print"#######################################################"
     print""
     n = int(input("Cuantos lados tiene el prisma?: "))
@@ -353,17 +354,17 @@ def prisma():
 
 def tronco():
     print"#######################################################"
-    print("#######    AREA Y VOLUMEN DEL TRONCO DE CONO    #######")
+    print"#######    AREA Y VOLUMEN DEL TRONCO DE CONO    #######"
     print"#######################################################"
     print""
     h = float(input("Cuanto mide la altura?: "))
     print""
     r = float(input("Cuanto mide el radio menor?: "))
     print""
-    R = float(input("Cuanto mide el radio mayor?: "))
-    l = math.sqrt((h ** 2) + (R - r) ** 2)
-    a = math.pi * ((l * (R + r)) + (R ** 2) + (r ** 2))
-    v = (math.pi * h * ((R ** 2) + (r ** 2) + (R * r))) / 3
+    rma = float(input("Cuanto mide el radio mayor?: "))
+    l = math.sqrt((h ** 2) + (rma - r) ** 2)
+    a = math.pi * ((l * (rma + r)) + (rma ** 2) + (r ** 2))
+    v = (math.pi * h * ((rma ** 2) + (r ** 2) + (rma * r))) / 3
     print""
     print"El area del tronco de cono es: ", a
     print""
@@ -379,7 +380,7 @@ def tronco():
 
 def tetraedro():
     print"#######################################################"
-    print("#####    AREA Y VOLUMEN DEL TETRAEDRO REGULAR    ######")
+    print"#####    AREA Y VOLUMEN DEL TETRAEDRO REGULAR    ######"
     print"#######################################################"
     print""
     l = float(input("Cuanto mide el lado?: "))
@@ -400,7 +401,7 @@ def tetraedro():
 
 def esfera():
     print"#######################################################"
-    print("#########    AREA Y VOLUMEN DE LA ESFERA    ###########")
+    print"#########    AREA Y VOLUMEN DE LA ESFERA    ###########"
     print"#######################################################"
     print""
     r = float(input("Cuanto mide el radio?: "))
@@ -421,7 +422,7 @@ def esfera():
 
 def octaedro():
     print"#######################################################"
-    print("######    AREA y VOLUMEN DEL OCTAEDRO REGULAR    ######")
+    print"######    AREA y VOLUMEN DEL OCTAEDRO REGULAR    ######"
     print"#######################################################"
     print""
     l = float(input("Cuanto mide el lado o arista?: "))
@@ -442,10 +443,10 @@ def octaedro():
 
 def huso():
     print"#######################################################"
-    print("#####    AREA Y VOLUMEN DEL HUSO-CUÑA ESFERICA    #####")
+    print"#####    AREA Y VOLUMEN DEL HUSO-CUÑA ESFERICA    #####"
     print"#######################################################"
     print""
-    n = float(input("Cuantos grados tiene el ángulo formado entre los dos radios?: "))
+    n = float(input("Cuantos grados tiene el angulo formado entre los dos radios?: "))
     print""
     r = float(input("Cuanto mide el radio?: "))
     a = (4 * math.pi * (r ** 2) * n) / 360
@@ -465,7 +466,7 @@ def huso():
 
 def piramide():
     print"#######################################################"
-    print("##    AREA Y VOLUMEN DE LA PIRAMIDE CUADRANGULAR    ###")
+    print"##    AREA Y VOLUMEN DE LA PIRAMIDE CUADRANGULAR    ###"
     print"#######################################################"
     print""
     b = float(input("Cuanto mide la apotema de la base?: "))
@@ -492,7 +493,7 @@ def piramide():
 
 def casquete():
     print"#######################################################"
-    print("#####    AREA Y VOLUMEN DEL CASQUETE ESFERICO    ######")
+    print"#####    AREA Y VOLUMEN DEL CASQUETE ESFERICO    ######"
     print"#######################################################"
     print""
     r = float(input("Cuanto mide el radio?: "))
@@ -515,24 +516,24 @@ def casquete():
 
 def tronpi():
     print"############################################################"
-    print("#    AREA Y VOLUMEN DEL TRONCO DE PIRAMIDE CUADRANGULAR    #")
+    print"#    AREA Y VOLUMEN DEL TRONCO DE PIRAMIDE CUADRANGULAR    #"
     print"############################################################"
     print""
-    L = float(input("Cuanto mide el lado de la base mayor?: "))
+    lma = float(input("Cuanto mide el lado de la base mayor?: "))
     print""
     l = float(input("Cuanto mide el lado de la base menor?: "))
     print""
     h = float(input("Cuanto mide la altura del tronco de la piramide?: "))
-    apM = L / 2
+    apma = lma / 2
     apm = l / 2
-    ap = apM - apm
-    AP = round((math.sqrt((ap ** 2) + (h ** 2))), 3)
-    aB = (L ** 2)
+    ap = apma - apm
+    amapma = round((math.sqrt((ap ** 2) + (h ** 2))), 3)
+    abma = (lma ** 2)
     ab = (l ** 2)
-    a = (((L * 4) + (l * 4)) / 2) * AP + ((aB) + (ab))
-    v = h / 3 * (aB + (math.sqrt(aB * ab) + ab))
+    a = (((lma * 4) + (l * 4)) / 2) * amapma + (abma + ab)
+    v = h / 3 * (abma + (math.sqrt(abma * ab) + ab))
     print""
-    print"El area del troco de piramide es: ", a
+    print"El area del tronco de piramide es: ", a
     print""
     print"El volumen del tronco de piramide es: ", v
     print""
@@ -546,16 +547,16 @@ def tronpi():
 
 def zona():
     print"#######################################################"
-    print("######    AREA Y VOLUMEN DE LA ZONA ESFERICA    #######")
+    print"######    AREA Y VOLUMEN DE LA ZONA ESFERICA    #######"
     print"#######################################################"
     print""
-    R = float(input("Cuanto mide el radio mayor?: "))
+    rma = float(input("Cuanto mide el radio mayor?: "))
     print""
     r = float(input("Cuanto mide el radio menor?: "))
     print""
     h = float(input("Cuanto mide la altura?: "))
-    a = 2 * math.pi * R * h
-    v = math.pi / 6 * h * ((h ** 2) + (3 * (R ** 2)) + (3 * (r ** 2)))
+    a = 2 * math.pi * rma * h
+    v = math.pi / 6 * h * ((h ** 2) + (3 * (rma ** 2)) + (3 * (r ** 2)))
     print""
     print"El area de la zona esferica es: ", a
     print""
@@ -571,7 +572,7 @@ def zona():
 
 def elipse():
     print"#######################################################"
-    print("#########    AREA DEL ELIPSE    #######################")
+    print"#########    AREA DEL ELIPSE    #######################"
     print"#######################################################"
     print""
     b = float(input("Cuanto mide el semieje mayor?: "))
@@ -580,7 +581,7 @@ def elipse():
     pi = 3.1416
     a = pi * b * h
     print""
-    print "El area del elípse es:", a
+    print "El area del elipse es:", a
     print""
     tecla = raw_input("Presione <ENTER> para continuar con otra figura geometrica, [0]--> para salir ......")
     if tecla == "0":
@@ -592,14 +593,14 @@ def elipse():
 
 def toro():
     print"#######################################################"
-    print("#########    AREA Y VOLUMEN DEL TORO    ###############")
+    print"#########    AREA Y VOLUMEN DEL TORO    ###############"
     print"#######################################################"
     print""
-    R = float(input("Cuanto mide el radio de la circunferencia directriz?: "))
+    rma = float(input("Cuanto mide el radio de la circunferencia directriz?: "))
     print""
-    r = float(input("Cuanto mide el radio del círculo generatriz?: "))
-    a = 4 * (math.pi ** 2) * R * r
-    v = 2 * (math.pi ** 2) * R * r ** 2
+    r = float(input("Cuanto mide el radio del circulo generatriz?: "))
+    a = 4 * (math.pi ** 2) * rma * r
+    v = 2 * (math.pi ** 2) * rma * r ** 2
     print""
     print "El area del toro es:", a
     print""
@@ -615,7 +616,7 @@ def toro():
 
 def elipsoide():
     print"#######################################################"
-    print("#########    AREA Y VOLUMEN DEL ELIPSOIDE    ##########")
+    print"#########    AREA Y VOLUMEN DEL ELIPSOIDE    ##########"
     print"#######################################################"
     print""
     a = float(input("Cuanto mide el radio mayor?: "))
@@ -623,12 +624,12 @@ def elipsoide():
     b = float(input("Cuanto mide el segundo radio?: "))
     print""
     c = float(input("Cuanto mide el tercer radio?: "))
-    A = 4 * math.pi * pow(
+    area = 4 * math.pi * pow(
         (pow(a, 1.6075) * pow(b, 1.6075) + pow(a, 1.6075) * pow(c, 1.6075) + pow(b, 1.6075) * pow(c, 1.6075)) / 3,
         1 / 1.6075)
     v = 4 * math.pi * a * b * c / 3
     print""
-    print "El area del elipsoide es:", A
+    print "El area del elipsoide es:", area
     print""
     print "El volumen del elipsoide es:", v
     print""
@@ -642,17 +643,17 @@ def elipsoide():
 
 def prisma_rect():
     print"#######################################################"
-    print("#####    AREA Y VOLUMEN DEL PRISMA RECTANGULAR    #####")
+    print"#####    AREA Y VOLUMEN DEL PRISMA RECTANGULAR    #####"
     print"#######################################################"
     print""
     print""
-    L = float(input("Cuanto mide el lado mayor?: "))
+    lma = float(input("Cuanto mide el lado mayor?: "))
     print""
     l = float(input("Cuanto mide el lado menor?: "))
     print""
     h = float(input("Cuanto mide la altura?: "))
-    a = 2 * (L * l) + 2 * (L * h) + 2 * (l * h)
-    v = L * l * h
+    a = 2 * (lma * l) + 2 * (lma * h) + 2 * (l * h)
+    v = lma * l * h
     print""
     print"El area del prisma rectangular es: ", a
     print""
@@ -667,6 +668,7 @@ def prisma_rect():
 
 
 def main():
+
     """Funcion principal del menu"""
 
     limpiar()
@@ -697,7 +699,7 @@ def main():
 
     if opcion != "1" and opcion != "2" and opcion != "3" and opcion != "4" and opcion != "5" and opcion != "6" and opcion != "7" and opcion != "8" and opcion != "9" and opcion != "10" and opcion != "11" and opcion != "12" and opcion != "13" and opcion != "14" and opcion != "15" and opcion != "16" and opcion != "17" and opcion != "18" and opcion != "19" and opcion != "20" and opcion != "21" and opcion != "22" and opcion != "23" and opcion != "24" and opcion != "25" and opcion != "26" and opcion != "27" and opcion != "28" and opcion != "0":
 
-        print "Opcion incorrecta, presione una tecla para volver al menu ...."
+        print "Opcion incorrecta, presione <ENTER> para volver al menu ...."
 
         raw_input()
 
@@ -707,16 +709,13 @@ def main():
 
         cuadrado()
 
-
     elif opcion == "2":
 
         rectangulo()
 
-
     elif opcion == "3":
 
         rombo()
-
 
     elif opcion == "4":
 
@@ -726,16 +725,13 @@ def main():
 
         romboide()
 
-
     elif opcion == "6":
 
         trapecio()
 
-
     elif opcion == "7":
 
         poligono()
-
 
     elif opcion == "8":
 
@@ -745,61 +741,49 @@ def main():
 
         corona()
 
-
     elif opcion == "10":
 
         sector()
-
 
     elif opcion == "11":
 
         cubo()
 
-
     elif opcion == "12":
 
         cilindro()
-
 
     elif opcion == "13":
 
         ortoedro()
 
-
     elif opcion == "14":
 
         cono()
-
 
     elif opcion == "15":
 
         prisma()
 
-
     elif opcion == "16":
 
         tronco()
-
 
     elif opcion == "17":
 
         tetraedro()
 
-
     elif opcion == "18":
 
         esfera()
-
 
     elif opcion == "19":
 
         octaedro()
 
-
     elif opcion == "20":
 
         huso()
-
 
     elif opcion == "21":
 
@@ -809,36 +793,29 @@ def main():
 
         casquete()
 
-
     elif opcion == "23":
 
         tronpi()
-
 
     elif opcion == "24":
 
         zona()
 
-
     elif opcion == "25":
 
         elipse()
-
 
     elif opcion == "26":
 
         toro()
 
-
     elif opcion == "27":
 
         elipsoide()
 
-
     elif opcion == "28":
 
         prisma_rect()
-
 
     elif opcion == "0":
 
