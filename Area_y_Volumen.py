@@ -18,10 +18,10 @@ import sys
 def limpiar():
     """Limpia la pantalla"""
 
-# Limpia pantalla en linux
-#    os.system("clear")
-# Limpia pantalla en windows
-    os.system("cls")
+    if os.name == "posix":
+        os.system("clear")
+    elif os.name == "ce" or os.name == "nt" or os.name == "dos":
+        os.system("cls")
 
 
 def salir():
