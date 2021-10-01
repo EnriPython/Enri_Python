@@ -3,18 +3,27 @@
      
 from fractions import gcd
 
-print"#####    fracciones by Enri_Python    #####"
-   
-print"#### OPERACIONES CON FRACCIONES ####\n"     
+
+print"###########################################"
+print"#                                         #"
+print"#             by Enri_Python              #"
+print"#                                         #"
+print"#     OPERACIONES CON FRACCIONES v1.0     #"
+print"#                                         #"
+print"###########################################\n"
+
+
 class Fraccion(object):
     __slots__ = ['num', 'den']
+
      
     def __init__(self, num, den=1):
         self.num = num
         self.den = den
+
      
     def entrada(self):
-        frac = raw_input('Introduce una fracción <numerador/denominador>:\n')
+        frac = raw_input('Introduce una fraccion <numerador/denominador (ejemplo: 3/4)>:\n')
         if '/' not in frac:
             frac = frac + '/1'
         l1 = frac.rsplit('/')
@@ -27,6 +36,9 @@ class Fraccion(object):
             self.num = -self.num
             self.den = -self.den
         l1 = []
+
+
+
      
     def __mul__(self, frac):
         mult = Fraccion(self.num, self.den)
@@ -36,6 +48,7 @@ class Fraccion(object):
         return mult
      
     __rmul__ = __mul__
+
      
     def __div__(self, frac):
         divi = Fraccion(self.num, self.den)
@@ -45,6 +58,7 @@ class Fraccion(object):
         return divi
      
     __rdiv__ = __div__
+
      
     def __pow__(self, exp):
         pot = Fraccion(self.num, self.den)
@@ -52,6 +66,7 @@ class Fraccion(object):
         pot.den = self.den ** exp
         pot = pot.simplifica()
         return pot
+
      
     def __add__(self, frac):
         suma = Fraccion(self.num, self.den)
@@ -68,6 +83,7 @@ class Fraccion(object):
             return suma
      
     __radd__ = __add__
+
      
     def __sub__(self, frac):
         resta = Fraccion(self.num, self.den)
@@ -77,18 +93,21 @@ class Fraccion(object):
         return resta
      
     __rsub__ = __sub__
+
      
     def __neg__(self):
         op = Fraccion(self.num, self.den)
         op.num = -self.num
         op.den = self.den
         return op
+
      
     def __invert__(self):
         inv = Fraccion(self.num, self.den)
         inv.num = self.den
         inv.den = self.num
         return inv
+
      
     def __abs__(self):
         absoluto = Fraccion(self.num, self.den)
@@ -100,10 +119,12 @@ class Fraccion(object):
         elif self.den < 0:
             absoluto.den = -self.den
             return absoluto
+
      
     def mcm(self, a, b):
         mincm = (a * b) / gcd(a, b)
         return mincm
+
      
     def __lt__(self, frac):
         c1 = self.num * frac.den
@@ -112,6 +133,7 @@ class Fraccion(object):
             return "VERDADERO"
         else:
             return "FALSO"
+
      
     def __le__(self, frac):
         c1 = self.num * frac.den
@@ -120,6 +142,7 @@ class Fraccion(object):
             return "VERDADERO"
         else:
             return "FALSO"
+
      
     def __eq__(self, frac):
         c1 = self.num * frac.den
@@ -128,6 +151,7 @@ class Fraccion(object):
             return 'SON FACCIONES EQUIVALENTES'
         else:
             return 'NO SON FRACCIONES EQUIVALENTES'
+
      
     def __ne__(self, frac):
         c1 = self.num * frac.den
@@ -136,6 +160,7 @@ class Fraccion(object):
             return "VERDADERO"
         else:
             return "FALSO"
+
      
     def __gt__(self, frac):
         c1 = self.num * frac.den
@@ -144,6 +169,7 @@ class Fraccion(object):
             return "VERDADERO"
         else:
             return "FALSO"
+
      
     def __ge__(self, frac):
         c1 = self.num * frac.den
@@ -152,6 +178,7 @@ class Fraccion(object):
             return "VERDADERO"
         else:
             return "FALSO"
+
      
     def simplifica(self):
         simp = Fraccion(self.num, self.den)
@@ -159,6 +186,7 @@ class Fraccion(object):
         simp.num = self.num / mcd
         simp.den = self.den / mcd
         return(simp)
+
      
     def __repr__(self):
         if self.num == self.den:
@@ -176,7 +204,8 @@ q = Fraccion(0, 0)
      
 Fraccion.entrada(p)
 Fraccion.entrada(q)
-     
+print ""
+print ""
      
 print('MULTIPLICACION = {}'.format(p * q))
 print('DIVISION = {}'.format(p / q))
@@ -189,6 +218,12 @@ print('{} <= {} : {}'.format(p, q, p <= q))
 print('{} y {} : {}'.format(p, q, p == q))
 print('{} ES DISTINTA DE {} : {}'.format(p, q, p != q))
 print('{} > {} : {}'.format(p, q, p > q))
+print ""
+print ""
+print "Presione <ENTER> para salir ......"
+
+
+input()
 
 
 
