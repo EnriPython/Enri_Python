@@ -5,7 +5,7 @@
      #                                                                     #
      #      multiplicacion, suma, resta, division, factorial y raiz        #
      #                                                                     #
-     #                      oper_polinomios.py v1.0                        #
+     #                      oper_polinomios.py v2.0                        #
      #                          by Enri_Python                             #
      #                                                                     #
      #        Exprese el polinomio de ejemplo: 7x³ + 2x² + x - 7           #
@@ -26,7 +26,7 @@
      
      ##########################################
      ####                                  ####
-     ####       fracciones.py v 1.0        ####
+     ####       fracciones.py v 2.0        ####
      ####               by                 ####
      ####           Enri_Python            ####
      ####                                  ####
@@ -35,7 +35,7 @@
      
      ##########################################
      ####                                  ####
-     ####           mates.py v1.0          ####
+     ####           mates.py v2.0          ####
      ####                by                ####
      ####            Enri_Python           ####
      ####                                  ####
